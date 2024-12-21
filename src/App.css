@@ -1,0 +1,48 @@
+.App {
+  text-align: center;
+  width: 100%;
+}
+
+#token-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-self: center;
+  width: fit-content;
+  padding: 20px;
+
+  @media screen and (max-width: 900px){
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+#token-list a {
+  display: flex;
+  gap: 10px;
+  text-align: left;
+  text-decoration: none;
+  color: grey;
+  width: 33.33%;
+}
+
+#token-list a h3 {
+  line-height: 10px;
+  margin-top: 0;
+}
+
+#token-list a .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#token-list a .info > div {
+  margin-bottom: 5px;
+  white-space: pre-line;
+  font-size: 14px;
+  word-wrap: break-word;
+}
+
+#token-list a img {
+  width: 150px;
+}
